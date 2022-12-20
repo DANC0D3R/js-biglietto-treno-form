@@ -1,103 +1,104 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcolo del prezzo del biglietto del treno 2.0</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calcolo del prezzo del biglietto del treno 2.0</title>
 
-    <!-- Stile -->
-    <link rel="stylesheet" href="css/style.css">
+        <!-- Stile -->
+        <link rel="stylesheet" href="css/style.css">
 
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
 
-<body>
-    <!-- Contenitore -->
-    <div class="container">
-        <!-- Titolo -->
-        <h1>calcola il prezzo del tuo biglietto</h1>
-        <!-- Form -->
-        <section id="form-card" class="white-card">
-            <form>
-                <!-- Card Inserimento -->
-                <div class="input-card">
-                    <div class="info">
-                        <label for="fullname-input">Nome e Cognome</label>
-                        <input id="fullname-input" type="text" placeholder="Mario Rossi">
-                    </div>
-                    <div class="info">
-                        <label for="km-input"> Km da percorrere</label>
-                        <input id="km-input" type="number" placeholder="10">
-                    </div>
-                    <div class="info">
-                        <label for="age-input">Fascia d'età</label>
-                        <select id="age-input">
-                            <option selected disabled value="null">Seleziona...</option>
-                            <option value="ridotta">Minorenne</option>
-                            <option value="standard">Maggiorenne</option>
-                            <option value="silver">Over 65</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- Botoni -->
-                <div class="buttons">
-                    <button type="button">Genera</button>
-                    <button type="reset" value="Reset">Annulla</button>
-                </div>
-            </form>
-        </section>
-        <!-- Biglietto -->
-        <section id="ticket">
+    <body>
+        <!-- Contenitore -->
+        <div class="container">
             <!-- Titolo -->
-            <h2>il tuo biglietto</h2>
-            <div class="white-card">
-                <h3>dettaglio passeggeri</h3>
-                <div class="ticket">
-                    <!-- Parte Sinistra -->
-                    <div class="ticket-info-left">
-                        <h3>nome passeggero</h3>
-                        <h4 id="fullname-display">Nome e Cognome</h4>
+            <h1>calcola il prezzo del tuo biglietto</h1>
+            <!-- Form -->
+            <section id="form-card" class="white-card">
+                <form>
+                    <!-- Card Inserimento -->
+                    <div class="input-card">
+                        <div class="info">
+                            <label for="fullname-input">Nome e Cognome</label>
+                            <input id="fullname-input" type="text" placeholder="Mario Rossi">
+                        </div>
+                        <div class="info">
+                            <label for="km-input"> Km da percorrere</label>
+                            <input id="km-input" type="number" placeholder="10">
+                        </div>
+                        <div class="info">
+                            <label for="age-input">Fascia d'età</label>
+                            <select id="age-input">
+                                <option selected disabled value="null">Seleziona...</option>
+                                <option value="ridotta">Minorenne</option>
+                                <option value="standard">Maggiorenne</option>
+                                <option value="silver">Over 65</option>
+                            </select>
+                        </div>
                     </div>
-                    <!-- Parte Destra -->
-                    <div class="ticket-info-right">
-                        <table>
-                            <tr>
-                                <th>Offerta</th>
-                                <th>Carrozza</th>
-                                <th>Codice CP</th>
-                                <th>Costo Biglietto</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span id="offer">Offerta</span>
-                                </td>
-                                <td>
-                                    <span id="carriage">Carrozza</span>
-                                </td>
-                                <td>
-                                    <span id="cp-code">Codice CP</span>
-                                </td>
-                                <td>
-                                    <span id="price">Prezzo</span>
-                                </td>
-                            </tr>
-                        </table>
+                    <!-- Botoni -->
+                    <div class="buttons">
+                        <button type="button">Genera</button>
+                        <button type="reset" value="Reset">Annulla</button>
+                    </div>
+                </form>
+            </section>
+            <!-- Biglietto -->
+            <section id="ticket">
+                <!-- Titolo -->
+                <h2>il tuo biglietto</h2>
+                <div class="white-card">
+                    <h3>dettaglio passeggeri</h3>
+                    <div class="ticket">
+                        <!-- Parte Sinistra -->
+                        <div class="ticket-info-left">
+                            <h3>nome passeggero</h3>
+                            <h4 id="fullname-display">Nome e Cognome</h4>
+                        </div>
+                        <!-- Parte Destra -->
+                        <div class="ticket-info-right">
+                            <table>
+                                <tr>
+                                    <th>Offerta</th>
+                                    <th>Carrozza</th>
+                                    <th>Codice CP</th>
+                                    <th>Costo Biglietto</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span id="offer">Offerta</span>
+                                    </td>
+                                    <td>
+                                        <span id="carriage">Carrozza</span>
+                                    </td>
+                                    <td>
+                                        <span id="cp-code">Codice CP</span>
+                                    </td>
+                                    <td>
+                                        <span id="price">Prezzo</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Erroe -->
-        <section id="error-card">
-            <h2>Attenzione!</h2>
-            <div class="white-card">
-                <p id="error">Errore</p>
-            </div>
-        </section>
-    </div>
+            </section>
+            <!-- Erroe -->
+            <section id="error-card">
+                <h2>Attenzione!</h2>
+                <div class="white-card">
+                    <p id="error">Errore</p>
+                </div>
+            </section>
+        </div>
 
-    <!-- Script -->
-    <script type="text/javascript" src="js/script.js"></script>
-</body>
+        <!-- Script -->
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+    <!-- Crediti DM -->
 </html>
