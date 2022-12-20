@@ -1,0 +1,172 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* REGOLE GENERALI */
+:root {
+    --pink-color: #B91450;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    background-color: var(--pink-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.white-card {
+    padding: 2rem;
+    
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    background-color: #FFFFFF;
+}
+
+/* TESTI */
+h1 {
+    margin: 2rem 0;
+}
+
+h1, h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+/* TABELLA */
+th {
+    padding-bottom: 3rem;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+td {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+#error {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* FORM */
+#form-card {
+    margin-bottom: 2rem;
+
+    border-radius: 20px;
+}
+
+#form-card .input-card {
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 2rem;
+}
+
+#form-card .input-card .info {
+    padding: 0 2rem;
+
+    text-align: center;
+}
+
+#form-card .input-card .info label {
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    font-size: 1.5rem;
+
+    color: var(--pink-color);
+}
+
+#form-card .input-card .info input, #form-card .input-card .info select {
+    display: block;
+
+    width: 200px;
+    padding: 0.5rem;
+    
+    border: 1px solid var(--pink-color);
+    border-radius: 5px;
+
+    font-size: 1.5rem;
+}
+
+#form-card .input-card .info input:placeholder-shown {
+    text-overflow: ellipsis;
+}
+
+#form-card .input-card .info input:focus-visible, #form-card .input-card .info select:focus-visible {
+    background-color: var(--pink-color);
+} 
+
+#form-card .input-card .info select:focus-visible option {
+    background-color: #FFFFFF;
+}
+
+#form-card .buttons {
+    text-align: center;
+}
+
+#form-card .buttons button {
+    margin: 0 1rem;
+    padding: 0.5rem;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    color: var(--pink-color);
+}
+
+/* BIGLIETTO */
+#ticket {
+    display: none;
+}
+
+#ticket .white-card .ticket {
+    display: flex;
+    
+    border: 1px solid #B3B3B3;
+}
+
+#ticket .white-card .ticket .ticket-info-left {
+    padding: 2rem;
+
+    background-color: #B3B3B3;
+}
+
+#ticket .white-card .ticket .ticket-info-right {
+    flex-grow: 1;
+
+    padding: 2rem;
+}
+
+#ticket .white-card .ticket .ticket-info-right table {
+    width: 100%;
+}
+
+/* ERRORE */
+#error-card {
+    display: none;
+}
